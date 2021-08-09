@@ -1,0 +1,6 @@
+SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+  from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>'
+
+Code was entered from irb, not text editor., error on line 16 in main function (C related?)
+A ) was used instead of a }
+Could be that a hash wasn't closed correctly.
