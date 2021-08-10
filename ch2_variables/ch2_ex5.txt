@@ -1,0 +1,22 @@
+Code samples from Exercise 5:
+
+x = 0
+3.times do
+  x += 1
+end
+puts x
+
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+
+The first example prints x as 3 because x is defined in the outer scope 
+so that it is available to the #times method.
+
+However, the second example ends in an error. It initializes y in the outer scope so that it's
+available in the method, so y increments 3 times (to = 3 like in example 1).
+Then, a local x variable is initialized and set to y (value of 3) in the inner scope,
+where it cannot be accessed in the outer scope after the method ends.
