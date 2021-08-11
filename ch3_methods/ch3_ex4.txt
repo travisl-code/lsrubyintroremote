@@ -1,0 +1,12 @@
+def scream(words)
+  words = words + "!!!!"
+  return
+  puts words
+end
+
+scream("Yippeee")
+
+Explicit return before line 4 means line 4 won't execute.
+There would be no output to console, but return would be Yippeee!!!!
+The scream method takes one parameter (string arg "Yippeee"),
+and the method concats that arg (words) with !!!! and returns it
