@@ -1,0 +1,35 @@
+# Snippet 1
+'4' == 4 ? puts("TRUE") : puts("FALSE")
+
+
+The string 4 is not equal to integer 4, so will put FALSE to the console.
+
+
+
+# Snippet 2
+x = 2
+if ((x * 3) / 2) == (4 + 4 - x - 3)
+  puts "Did you get it right?"
+else
+  puts "Did you?"
+end
+
+
+Simplifies to 3 == 3, which is true, so it will print "Did you get it right?"
+
+
+
+# Snippet 3
+y = 9
+x = 10
+if (x + 1) <= (y)   #11 <= 9 - false
+  puts "Alright."
+elsif (x + 1) >= (y)  # 11 > 9 - True, so it prints "Alright now!" and terminates code block
+  puts "Alright now!"
+elsif (y + 1) == x
+  puts "ALRIGHT NOW!"
+else
+  puts "Alrighty!"
+end
+
+

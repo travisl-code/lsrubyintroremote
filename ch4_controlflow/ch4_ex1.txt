@@ -1,0 +1,10 @@
+(32 * 4) >= 129 # false
+false != !true # false
+true == 4 # true -- wrong. FALSE. Explanation is that
+# 4 is a truthy value (not a nil), but it's not a boolean true
+
+
+false == (847 == '874') # false == false, so true
+(!true || (!(100 / 5) == 20) || ((328 / 4) == 82)) || false
+
+# 5 false || false || true || false # evaluates true
