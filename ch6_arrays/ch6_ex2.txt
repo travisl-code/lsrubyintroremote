@@ -1,0 +1,20 @@
+1. arr = ["b", "a"]
+   arr = arr.product(Array(1..3)) # [["b", 1], ["b", 2], ["b", 3], ["a", 1], ["a", 2], ["a", 3]]
+   arr.first.delete(arr.first.last) # [] - WRONG
+
+# arr.first returns the first sub-array.
+# Then we run the delete method on the first sub-array, passing the argument
+# arr.first.last which returns 1 (the last element of the first sub-array).
+# The return is actually 1 (the element deleted). The arr array becomes this:
+# [["b"], ["b", 2], ["b", 3], ["a", 1], ["a", 2], ["a", 3]]
+
+
+2. arr = ["b", "a"]
+   arr = arr.product([Array(1..3)]) # [["b", [1, 2, 3]], ["a", [1, 2, 3]]]
+   arr.first.delete(arr.first.last)
+
+# arr.first is ["b", [1, 2, 3]]
+# then we run the delete method, passing arg arr.first.last
+# arr.first.last is [1, 2, 3]
+# The return is what is deleted -- [1, 2, 3]
+# arr becomes [["b"], ["a", [1, 2, 3]]]
