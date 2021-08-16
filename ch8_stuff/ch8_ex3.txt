@@ -1,0 +1,9 @@
+What is exception handling and problem it solves?
+
+Exception handling anticipates errors and manages those errors
+in a way that prevents the program itself from crashing. Exception
+handling could be built around user input, for example, when
+asking for an integer for some operation. If the user passes a 
+string instead (which may raise an exception in a method), then
+exception handling message can be created to prevent the program
+from crashing. These use the begin, rescue, and end reserved words.
