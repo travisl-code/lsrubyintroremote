@@ -1,0 +1,3 @@
+The main difference between an array and a hash is that
+a hash has key-value pairs for its data. An array, on The
+other hand, is essentially an ordered list.

@@ -1,0 +1,7 @@
+Hashes -- Exercise 1:
+Provided a hash of family members where the key is relation
+and the value is a list of relatives, we're asked to find
+only immediate family members (sisters and brothers). 
+We use the or || operator to get k == :sisters || k == :brothers
+However, I thought that || was a non-greedy operation, meaning that
+if Ruby finds something on the first attempt, it won't even try the 2nd.
